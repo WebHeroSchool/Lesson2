@@ -1,0 +1,18 @@
+body{ font-family:arial; }
+.nav {
+display: flex;
+justify-content: flex-end; /* разместим справа */
+background: #008aff;
+}
+.nav a {
+color:#fff;
+padding:15px 10px;
+text-decoration:none;
+text-align:center;
+}
+.nav a:hover { background:#5c8db7; }
+/* меньше 800px */
+@media all and (max-width: 800px) {
+.nav { justify-content: space-around; }
+.nav a{ flex-grow:1; /* растягиваться на всю ширину */ }
+}
