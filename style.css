@@ -1,17 +1,79 @@
-body { 
-	font-family:arial;
-	 }
-.nav {
-display: flex;
-justify-content: flex-end; /* разместим справа */
-background: #008aff;
+.main-menu {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #C0C0C0;
+	border:1px solid #778899;
+
 }
-.nav a {
-color:#fff;
-padding:15px 10px;
-text-decoration:none;
-text-align:center;
+.main-menu__item {
+	display: inline-block;
+	color: black;
+	font-family: sans-serif;
+	font-size: 22px;
+	padding-right: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
 }
-.nav a:hover { 
-	background:#5c8db7;
-	 }
+.main-menu__item:hover {
+	text-decoration: underline;
+	opacity: .7
+}
+.menu__icon {
+	display: none;
+	width: 45px;
+	height: 35;
+	position: relative;
+}
+.menu__icon span {
+	display: block;
+	position: absolute;
+	height: 9px;
+	width: 100%;
+	background-color: #C0C0C0;
+	border-radius: 9px;
+	left: 0;
+}
+.menu__icon span::first-child {
+	top: 0;
+}
+.menu__icon span::nth-child(2) {
+	top: 13;
+}
+.menu__icon span::nth-child(3) {
+	top: 26;
+}
+@media (max-width: 736px) {
+	.menu__icon {
+		display: block;
+	}
+	.main-menu {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
