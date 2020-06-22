@@ -24,7 +24,7 @@
 .menu__icon {
 	display: none;
 	width: 45px;
-	height: 35;
+	height: 35px;
 	position: relative;
 }
 .menu__icon span {
@@ -36,16 +36,16 @@
 	border-radius: 9px;
 	left: 0;
 }
-.menu__icon span::first-child {
+.menu__icon span: first-child {
 	top: 0;
 }
-.menu__icon span::nth-child(2) {
+.menu__icon span: nth-child(2) {
 	top: 13;
 }
-.menu__icon span::nth-child(3) {
+.menu__icon span: nth-child(3) {
 	top: 26;
 }
-@media (max-width: 736px) {
+@media (max-width: 768px) {
 	.menu__icon {
 		display: block;
 	}
