@@ -46,7 +46,10 @@
 }
 @media (max-width: 768px) {
 	.menu__icon {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
 	}
 	.main-menu {
 		display: none;
