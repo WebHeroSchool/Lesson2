@@ -25,11 +25,10 @@
 	display: none;
 	width: 45px;
 	height: 35px;
-	position: relative;
+	
 }
 .menu__icon span {
 	display: block;
-	position: absolute;
 	height: 9px;
 	width: 100%;
 	background-color: #C0C0C0;
